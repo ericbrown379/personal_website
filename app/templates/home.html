@@ -1,0 +1,13 @@
+<!-- app/templates/home.html -->
+{% extends "base.html" %}
+
+{% block content %}
+<div class="jumbotron text-center">
+    <img src="{{ url_for('static', filename='profile.png') }}" alt="Eric J. Brown" class="img-fluid rounded-circle" style="width: 150px; height: 150px;">
+    <h1 class="display-4">Welcome to Eric J. Brown's Personal Website</h1>
+    <p class="lead">I am a software engineer with experience in building scalable and efficient applications.</p>
+    <hr class="my-4">
+    <p>Explore my resume, projects, and contact me for opportunities.</p>
+    <a class="btn btn-primary btn-lg" href="/resume" role="button">View Resume</a>
+</div>
+{% endblock %}
