@@ -2,28 +2,109 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h2>Projects</h2>
+<div class="container mt-5">
+    <h2 class="mb-4 text-center" style="color: #0056b3;">Projects</h2>
 
-<section>
-    <h3>Work Projects</h3>
-    <ul>
-        <li><strong>AWS Textract OCR Library:</strong> Developed a Python library leveraging AWS Textract OCR and Boto to extract information from engineering schematics, improving efficiency by 30%. <span>(Booz Allen Hamilton)</span></li>
-        <li><strong>Data Pipeline Migration:</strong> Migrated data pipelines from Python to AWS SageMaker and S3, enhancing scalability and improving processing speed by 25%. <span>(Booz Allen Hamilton)</span></li>
-        <li><strong>Multi-threaded Document Transformation Pipeline:</strong> Designed and implemented a multi-threaded document transformation and quality assurance pipeline using Python, Pandas, joblib, and SQLite. <span>(Booz Allen Hamilton)</span></li>
-        <li><strong>DXL Scripting for Requirements Management:</strong> Automated repetitive tasks in requirements management using DXL scripting, improving efficiency by 60%. <span>(Robert Bosch LLC)</span></li>
-        <li><strong>Multi-threaded Database Transactions:</strong> Engineered a solution to improve multithreading of database transactions using Entity Framework and raw SQL, reducing processing time by 80%. <span>(Rocket Central)</span></li>
-        <!-- Add more work projects following the same format -->
-    </ul>
-</section>
+    <section class="mb-5">
+        <h3 class="mb-4" style="color: #0056b3;">Work Projects</h3>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card h-100" style="border-color: #6c757d;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: #0056b3;">AWS Textract OCR Library</h5>
+                        <p class="card-text">Developed a Python library leveraging AWS Textract OCR and Boto to extract information from engineering schematics, improving efficiency by 30%.</p>
+                        <p class="text-muted"><em>Booz Allen Hamilton</em></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card h-100" style="border-color: #6c757d;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: #0056b3;">Data Pipeline Migration</h5>
+                        <p class="card-text">Migrated data pipelines from Python to AWS SageMaker and S3, enhancing scalability and improving processing speed by 25%.</p>
+                        <p class="text-muted"><em>Booz Allen Hamilton</em></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card h-100" style="border-color: #6c757d;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: #0056b3;">Multi-threaded Document Transformation Pipeline</h5>
+                        <p class="card-text">Designed and implemented a multi-threaded document transformation and quality assurance pipeline using Python, Pandas, joblib, and SQLite.</p>
+                        <p class="text-muted"><em>Booz Allen Hamilton</em></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card h-100" style="border-color: #6c757d;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: #0056b3;">DXL Scripting for Requirements Management</h5>
+                        <p class="card-text">Automated repetitive tasks in requirements management using DXL scripting, improving efficiency by 60%.</p>
+                        <p class="text-muted"><em>Robert Bosch LLC</em></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card h-100" style="border-color: #6c757d;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: #0056b3;">Multi-threaded Database Transactions</h5>
+                        <p class="card-text">Engineered a solution to improve multithreading of database transactions using Entity Framework and raw SQL, reducing processing time by 80%.</p>
+                        <p class="text-muted"><em>Rocket Central</em></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section>
-    <h3>School Projects</h3>
-    <ul>
-        <li><strong>JokeAPI:</strong> A Flask-based web application serving jokes, demonstrating web API development. <a href="https://github.com/ericbrown379/JokeApi">View on GitHub</a></li>
-        <li><strong>JSTS-Starter:</strong> A JavaScript and TypeScript starter project for web development basics. <a href="https://github.com/ericbrown379/JSTS-Starter">View on GitHub</a></li>
-        <li><strong>Portfolio Website:</strong> My personal portfolio built with Angular, showcasing my skills and experience. <a href="https://github.com/ericbrown379/portfolio-website">View on GitHub</a></li>
-        <li><strong>Starbuzz:</strong> A basic HTML website project highlighting foundational web development skills. <a href="https://github.com/ericbrown379/starbuzz">View on GitHub</a></li>
-        <li><strong>Planning-APP-Persona-Website:</strong> An advanced web development project using TypeScript and modern tools. <a href="https://github.com/ericbrown379/Planning-APP-Persona-Website">View on GitHub</a></li>
-    </ul>
-</section>
+    <section>
+        <h3 class="mb-4" style="color: #0056b3;">School Projects</h3>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card h-100" style="border-color: #6c757d;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: #0056b3;">JokeAPI</h5>
+                        <p class="card-text">A Flask-based web application serving jokes, demonstrating web API development.</p>
+                        <a href="https://github.com/ericbrown379/JokeApi" class="btn btn-primary" style="background-color: #f8c471; border-color: #f8c471;">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card h-100" style="border-color: #6c757d;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: #0056b3;">JSTS-Starter</h5>
+                        <p class="card-text">A JavaScript and TypeScript starter project for web development basics.</p>
+                        <a href="https://github.com/ericbrown379/JSTS-Starter" class="btn btn-primary" style="background-color: #f8c471; border-color: #f8c471;">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card h-100" style="border-color: #6c757d;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: #0056b3;">Portfolio Website</h5>
+                        <p class="card-text">My personal portfolio built with Angular, showcasing my skills and experience.</p>
+                        <a href="https://github.com/ericbrown379/portfolio-website" class="btn btn-primary" style="background-color: #f8c471; border-color: #f8c471;">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card h-100" style="border-color: #6c757d;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: #0056b3;">Starbuzz</h5>
+                        <p class="card-text">A basic HTML website project highlighting foundational web development skills.</p>
+                        <a href="https://github.com/ericbrown379/starbuzz" class="btn btn-primary" style="background-color: #f8c471; border-color: #f8c471;">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card h-100" style="border-color: #6c757d;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: #0056b3;">Planning-APP-Persona-Website</h5>
+                        <p class="card-text">An advanced web development project using TypeScript and modern tools.</p>
+                        <a href="https://github.com/ericbrown379/Planning-APP-Persona-Website" class="btn btn-primary" style="background-color: #f8c471; border-color: #f8c471;">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
 {% endblock %}

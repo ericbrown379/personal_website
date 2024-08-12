@@ -2,12 +2,16 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="jumbotron text-center">
-    <img src="{{ url_for('static', filename='profile.png') }}" alt="Eric J. Brown" class="img-fluid rounded-circle" style="width: 150px; height: 150px;">
-    <h1 class="display-4">Welcome to Eric J. Brown's Personal Website</h1>
-    <p class="lead">I am a software engineer with experience in building scalable and efficient applications.</p>
-    <hr class="my-4">
-    <p>Explore my resume, projects, and contact me for opportunities.</p>
-    <a class="btn btn-primary btn-lg" href="/resume" role="button">View Resume</a>
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+            <img src="{{ url_for('static', filename='profile.png') }}" alt="Eric J. Brown" class="img-fluid rounded-circle mb-4" style="width: 150px; height: 150px; border: 5px solid #0056b3;">
+            <h1 class="display-4 mb-3" style="color: #0056b3;">Welcome to Eric J. Brown's Personal Website</h1>
+            <p class="lead mb-4" style="color: #343a40;">I am a software engineer with experience in building scalable and efficient applications.</p>
+            <hr class="my-4" style="border-top: 3px solid #f8c471;">
+            <p class="mb-4" style="color: #6c757d;">Explore my resume, projects, and contact me for opportunities.</p>
+            <a class="btn btn-primary btn-lg" href="/resume" role="button">View Resume</a>
+        </div>
+    </div>
 </div>
 {% endblock %}

@@ -2,49 +2,120 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h2>Resume</h2>
+<div class="container mt-5">
+    <h2 class="mb-4 text-center" style="color: #0056b3;">Resume</h2>
 
-<section>
-    <h3>Career Objective</h3>
-    <p>Results-oriented Software Engineer with 3 years of experience in Agile Full Stack Software Engineering/Development and excellent work ethic seeking a position in the Software Engineering field that will allow me to expand and enhance my analytical and technical skills while improving efficiency and profitability.</p>
-</section>
+    <section class="mb-5">
+        <h3 style="color: #0056b3;">Career Objective</h3>
+        <p class="text-muted">Results-oriented Software Engineer with 3 years of experience in Agile Full Stack Software Engineering/Development and excellent work ethic seeking a position in the Software Engineering field that will allow me to expand and enhance my analytical and technical skills while improving efficiency and profitability.</p>
+    </section>
 
-<section>
-    <h3>Technical Skills</h3>
-    <ul>
-        <li><strong>Programming Languages:</strong> Python, SQL, HTML, CSS/SCSS, JavaScript/TypeScript, .NET (C#), DXL</li>
-        <li><strong>Frameworks/Libraries:</strong> Boto, Pandas, .NET, ASP.NET, .NET Core, Razor Pages, Entity Framework, Angular, MuyPDF</li>
-        <li><strong>Software:</strong> Adobe, Confluence, Jira, Sumo Logic, Postman, Git, MacOS, Windows, CATIA V5/V6, MS Office Suite, SwaggerUI, Grafana, Azure DevOps, AWS (DynamoDB, SageMaker, S3), MongoDB, Dynatrace, CircleCI, Docker, SQLite, Microsoft SQL Server, Kubernetes, DOORS, Splunk</li>
-        <li><strong>Fields of Interest:</strong> Artificial Intelligence, Machine Learning, Algorithms, Data Engineering, Software Engineering</li>
-    </ul>
-</section>
+    <section class="mb-5">
+        <h3 style="color: #0056b3;">Technical Skills</h3>
+        <div class="row">
+            <div class="col-md-6">
+                <ul class="list-group">
+                    <li class="list-group-item" style="border-color: #6c757d;"><strong>Programming Languages:</strong> Python, SQL, HTML, CSS/SCSS, JavaScript/TypeScript, .NET (C#), DXL</li>
+                    <li class="list-group-item" style="border-color: #6c757d;"><strong>Frameworks/Libraries:</strong> Boto, Pandas, .NET, ASP.NET, .NET Core, Razor Pages, Entity Framework, Angular, MuyPDF</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <ul class="list-group">
+                    <li class="list-group-item" style="border-color: #6c757d;"><strong>Software:</strong> Adobe, Confluence, Jira, Sumo Logic, Postman, Git, MacOS, Windows, CATIA V5/V6, MS Office Suite, SwaggerUI, Grafana, Azure DevOps, AWS (DynamoDB, SageMaker, S3), MongoDB, Dynatrace, CircleCI, Docker, SQLite, Microsoft SQL Server, Kubernetes, DOORS, Splunk</li>
+                    <li class="list-group-item" style="border-color: #6c757d;"><strong>Fields of Interest:</strong> Artificial Intelligence, Machine Learning, Algorithms, Data Engineering, Software Engineering</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-<section>
-    <h3>Experience</h3>
-    <ul>
-        <li><strong>Booz Allen Hamilton - Data Engineer Summer Internship (May 2024 – Present)</strong></li>
-        <ul>
-            <li>Developed a library leveraging AWS Textract OCR and Python Boto module to extract information from engineering schematics, streamlining data extraction processes by 30%.</li>
-            <li>Migrated data pipelines from Python to AWS SageMaker and S3 buckets, enhancing scalability and improving data processing speed by 25%.</li>
-            <li>Designed and implemented a robust, multi-threaded document transformation and quality assurance pipeline using Python, Pandas, joblib, and SQLite.</li>
+    <section class="mb-5">
+        <h3 style="color: #0056b3;">Experience</h3>
+        <div class="accordion" id="experienceAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="background-color: #f8c471;">
+                        Booz Allen Hamilton - Data Engineer Summer Internship (May 2024 – Present)
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#experienceAccordion">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Developed a library leveraging AWS Textract OCR and Python Boto module to extract various information from engineering schematics, streamlining data extraction processes and improving efficiency by 30%.</li>
+                            <li>Migrated data pipelines from Python to AWS SageMaker and S3 buckets, enhancing scalability, improving data processing speed by 25%, and reducing operational overhead.</li>
+                            <li>Designed and implemented a robust, multi-threaded document transformation and quality assurance pipeline utilizing Python, Pandas, joblib, and SQLite. This solution improved data ingestion, validation, and metadata management processes, significantly enhancing data accuracy and processing efficiency for large-scale datasets.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="background-color: #f8c471;">
+                        Robert Bosch LLC - Software Requirements Engineer Co-Op (September 2023 – April 2024)
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#experienceAccordion">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Leading the implementation of DXL (DOORS Extension Language) scripting to automate repetitive tasks, improving the efficiency of requirements management by 60%.</li>
+                            <li>Collaborated with cross-functional teams to gather requirements and translate them into DXL scripts to facilitate customized reporting within DOORS.</li>
+                            <li>Identified and resolved discrepancies in requirements data by deploying DXL script-based validations, ensuring higher data integrity.</li>
+                            <li>Developed a Python3-built mapping program to automate the mapping of DOORS features to Jira features, streamlining the requirements management process.</li>
+                            <li>Utilized Bitbucket for version control and Jenkins for automating tasks and tools, enhancing the software development workflow.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="background-color: #f8c471;">
+                        Rocket Central / Rocket Platform Technology - Associate Software Engineer (June 2022 – August 2023)
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#experienceAccordion">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Engineered a solution to improve multithreading of multiple database transactions using Entity Framework and raw SQL ADO, leading to an 80% reduction in data processing time, saving the company thousands in missing SLA deadlines.</li>
+                            <li>Implemented quality gates and created repositories using Sonar’s Code Coverage and NX with CircleCI (.yml), Kubernetes, and Terraform.</li>
+                            <li>Lead production deploys for our pipeline using Git, CircleCI, Azure DevOps, and AWS.</li>
+                            <li>Implemented various new components on our dashboard application using Angular (RxJS, NGRX, Cypress, and NX) framework.</li>
+                            <li>Improved the resolution time by 30% for our dashboard application by providing vigilant on-call services using PagerDuty, Dynatrace, and Splunk.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" style="background-color: #f8c471;">
+                        365 Retail Markets - Software Development Intern (February 2022 – May 2022)
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#experienceAccordion">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Led a project to refactor legacy Java code, resulting in a 20% increase in application performance.</li>
+                            <li>Developed and implemented a new feature in Kotlin that allowed users to save their favorite orders, significantly speeding up the ordering process for repeat customers.</li>
+                            <li>Implemented a clean, intuitive UI for the feature, ensuring it aligned with the existing design language of the app.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mb-5">
+        <h3 style="color: #0056b3;">Education</h3>
+        <ul class="list-group">
+            <li class="list-group-item" style="border-color: #6c757d;"><strong>Wayne State University, Detroit MI:</strong> Bachelor of Science in Computer Science, Expected Graduation Date: May 2024</li>
+            <li class="list-group-item" style="border-color: #6c757d;"><strong>Oakland Community College, Southfield MI:</strong> Associates of Arts in General Studies</li>
         </ul>
-        <!-- Add more experiences following the same format -->
-    </ul>
-</section>
+    </section>
 
-<section>
-    <h3>Education</h3>
-    <ul>
-        <li><strong>Wayne State University, Detroit MI</strong> - Bachelor of Science in Computer Science (Expected Graduation Date: May 2024)</li>
-        <li><strong>Oakland Community College, Southfield MI</strong> - Associates of Arts in General Studies</li>
-    </ul>
-</section>
-
-<section>
-    <h3>Involvement</h3>
-    <ul>
-        <li><strong>Society of Computer Developers, Wayne State University</strong> - Member (January 2023 - Present)</li>
-        <li><strong>National Society of Black Engineers (NSBE), Wayne State University</strong> - Member (August 2023 - Present)</li>
-    </ul>
-</section>
+    <section>
+        <h3 style="color: #0056b3;">Involvement</h3>
+        <ul class="list-group">
+            <li class="list-group-item" style="border-color: #6c757d;"><strong>Society of Computer Developers, Wayne State University:</strong> Member (January 2023 - Present)</li>
+            <li class="list-group-item" style="border-color: #6c757d;"><strong>National Society of Black Engineers (NSBE), Wayne State University:</strong> Member (August 2023 - Present)</li>
+        </ul>
+    </section>
+</div>
 {% endblock %}
